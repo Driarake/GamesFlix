@@ -1,0 +1,73 @@
+:root{ /*raiz de tudo*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{ /*todo o documento*/
+    margin: 0;    /*margem padrao*/
+    padding: 0;   
+    box-sizing: border-box;   /*limite da caixa para nao ultrapassar os elementos*/
+}
+
+body{
+    background: var(--preta);
+    font-family: cursive, times;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;   
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: fantasy,'Arial black', Times;
+    font-size: 45px;
+}
+
+header nav a{
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.principal-capa{
+    font-size: 30px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/princ.jpg');
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal-capa .titulo{
+    margin-top: 20%;
+    margin-left: 290px;
+    font-family:'Arial';
+    font-size: 40px;
+    color: chartreuse;
+}
+
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.games-box{
+    margin-top: 5px;
+    height: 200px;
+    width: 200px;
+    display: block;
+}
+
+.games-box:hover{
+    border: solid #fff;
+}
